@@ -1,6 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{xcolor}
-\usepackage{blindtext}
+\usepackage{enumitem}
 
 
 
@@ -28,12 +27,70 @@ Here is the ordered list:
 
 \section{Extra examples}
 
+\subsection{Bullets}
+
+\begin{itemize}[label={\large\textbullet}]
+    \item First item
+    \item Second item
+    \item Third item
+    \item Fourth item
+\end{itemize}
+
+\vspace{4mm}
+
 \begin{enumerate}
-    \item \blindtext
-    \item \textcolor{red}{\blindtext}
-    \item \blindtext
+    \item Mango
+    \item Banana
+    \item[\$] Orange
+    \item Lime
+    \item Apple
+    \item[XXX] Strawberry
 \end{enumerate}
 
+\subsection{Nested lists}
 
+\begin{enumerate}
+    \item USA
+    \item China
+    \item Vietnam
+    \begin{enumerate}
+        \item Ha Noi
+        \item Ho Chi Minh
+        \begin{enumerate}
+            \item Thu Duc
+            \item District 1
+            \begin{enumerate}
+                \item Ben Nghe
+                \item Da Kao
+            \end{enumerate}
+            \item Cu Chi
+        \end{enumerate}
+        \item Da Nang
+    \end{enumerate}
+    \item Germany
+\end{enumerate}
+
+\vspace{4mm}
+
+\begin{itemize}
+    \item USA
+    \item China
+    \item Vietnam
+    \begin{itemize}
+        \item Ha Noi
+        \item Ho Chi Minh
+        \begin{itemize}
+            \item Thu Duc
+            \item District 1
+            \begin{itemize}
+                \item Ben Nghe
+                \item Da Kao
+            \end{itemize}
+            \item Cu Chi
+        \end{itemize}
+        \item Da Nang
+    \end{itemize}
+    \item Germany
+\end{itemize}
 
 \end{document}
