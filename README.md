@@ -34,7 +34,7 @@ cleanup.sh
 
 The cleanup script shall automatically identify the files that will be removed and shall show you a list of those files before proceeding.
 
-Example output:
+Output example:
 
 ```text
 $ ./cleanup.sh
