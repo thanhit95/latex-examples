@@ -44,5 +44,5 @@ read -s -n 1 key
 
 
 if [[ -f "${TMP_PDF_PATH}" ]]; then
-    mv "${TMP_PDF_PATH}" "${OUT_PDF_PATH}"
+    cp "${TMP_PDF_PATH}" "${OUT_PDF_PATH}"
 fi
