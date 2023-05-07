@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{xcolor}
+\usepackage{blindtext}
+
+
+
+\newcommand{\hr}[1][0.4pt] {\begin{center} \noindent\rule{\textwidth}{#1} \end{center}}
+
+\newcommand{\hrtwo}{\begin{center} \line(1,0){\textwidth} \end{center}}
+
+
+
+\begin{document}
+
+
+\section{Abstract}
+\blindtext
+\hr % default argument = 0.4pt
+
+
+\section{Introduction}
+\blindtext
+\textcolor{blue}{\hr[1.2pt]}
+
+
+\section{Methods}
+\blindtext
+\hrtwo
+
+
+\section{Conclusion}
+\blindtext
+
+
+
+\end{document}

@@ -1,0 +1,31 @@
+% http://www.personal.ceu.hu/tex/breaking.htm
+\documentclass[12pt, a4paper]{article}
+
+
+\begin{document}
+
+\verb|\\| Start a new line in current paragraph
+
+\verb|\\*| Is the same as above except that it indicates not to start a new page after the line
+
+\verb|\\[extra-space]| Should insert extra vertical space before the next line
+
+% https://tex.stackexchange.com/questions/736/pagebreak-vs-newpage
+
+\verb|\pagebreak| If the optional argument is not used, \verb|\pagebreak| will start a new page and the paragraphs of the old page will be spread out so that the old page will not look like the end of a chapter.
+
+\verb|\newpage| On the other hand, the old page will have the blank space at the bottom, because the paragraphs will stick together as if the chapter had ended there.
+
+\verb|\pagebreak[demand]| The \verb|demand| must be a number from 0 to 4. The higher the number, the more insistent the request is.
+
+\verb|\newline| vs. \verb|\linebreak[demand]| The same as explanation above.
+
+% https://tex.stackexchange.com/questions/82664/when-to-use-par-and-when-newline-or-blank-lines
+
+\verb|\par| is a TeX primitive and is the same as a blank line (except in special environments such as verbatim where the usual rules don't apply). It ends horizontal mode, causes TeX to break the horizontal text into lines placed on the current vertical list, and exercises the page breaker which may possibly cause the next page to be shipped out.
+
+% http://www.personal.ceu.hu/tex/breaking.htm
+
+\verb|\clearpage| ends the current page and causes all figures and tables that have so far appeared in the input to be printed. One of the most useful way to break the page is \verb|\clearpage\pagebreak|
+
+\end{document}

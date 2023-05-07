@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage{xcolor}
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor}
+
+
+
+\setlength\parindent{0pt} % No indentation for this whole document
+\definecolor{MyColor}{RGB}{230, 126, 34}
+\definecolor{MyColor2}{HTML}{6c3483}
+
+
+
+\begin{document}
+
+
+
+% ---------------------------------------------------
+\section{Font Styles}
+
+This text is \textbf{bold},
+\textit{italic},
+\underline{underline}, and
+\textit{\underline{both italic \& underline}}
+
+Some of the greatest \emph{discoveries} in science
+were made by accident.\\
+\textit{Some of the greatest \emph{discoveries}
+in science were made by accident.}\\
+\textbf{Some of the greatest \emph{discoveries}
+in science were made by accident.}
+
+
+
+% ---------------------------------------------------
+\section{Font Families}
+
+\textsf{Sans-Serif}
+
+\textrm{Serif (Roman)}
+
+\texttt{Type Writer (Monospace)}
+
+
+
+% ---------------------------------------------------
+\section{Font Sizes}
+
+{\tiny tiny}\\
+{\small small}\\
+{\normalsize normal size}\\
+{\large large}\\
+{\Large Large}\\
+{\LARGE LARGE}\\
+{\huge huge}\\
+{\Huge Huge}
+
+\begin{small}
+    Text in ``small" environment
+\end{small}
+
+\begin{Large}
+    Text in ``Large" environment
+\end{Large}
+
+
+
+% ---------------------------------------------------
+\section{Subscript and Superscript}
+
+% Note: To use math equation powerfully, see next tutorials
+
+Normal\textsuperscript{Super}, 2\textsuperscript{50}
+
+Normal\textsubscript{Sub}
+
+
+
+% ---------------------------------------------------
+\section{Font Colors}
+
+% Base colors:
+% red, green, blue, cyan, magenta, yellow, brown, lime, olive, orange, pink, purple, teal, violet
+% black, white, gray, darkgray, lightgray
+
+\textcolor{red}{Red color}, \textcolor{green}{green color}, \textcolor{blue}{blue color}
+
+\textcolor{Orchid}{Orchid color from dvipsnames}, \textcolor{ForestGreen}{ForestGreen color from dvipsnames}
+
+\textcolor{MyColor}{custom color}, \textcolor{MyColor2}{custom color 2}
+
+\colorbox{lightgray}{Light-gray background}
+
+\colorbox{yellow}{\textcolor{red}{Yellow background with red foreground}}
+
+
+
+\end{document}

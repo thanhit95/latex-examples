@@ -1,0 +1,34 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage[abspath]{currfile}
+
+
+% \graphicspath{{img/}} % set the root directory name containing images
+
+
+\begin{document}
+
+
+\section{First section}
+
+\blindtext[1]
+% \includegraphics{universe} % the best practice is to omit the file extension because it will prompt LaTeX to search for all the supported formats
+% \includegraphics{universe.jpg}
+% \includegraphics[width=5cm]{universe.jpg}
+\includegraphics[width=5cm]{\currfileabsdir/img/universe.jpg}
+\blindtext[1]
+
+\vspace{8mm}
+
+\blindtext[1]
+
+% \includesvg[width=\textwidth]{vietnam_flag}
+% \includesvg[width=8cm]{vietnam_flag}
+\includesvg[width=8cm]{\currfileabsdir/img/vietnam_flag}
+
+\blindtext[1]
+
+
+\end{document}

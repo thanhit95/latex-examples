@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{xcolor}
+
+
+
+\setlength\parindent{0pt} % No indentation for this whole document
+
+
+
+\begin{document}
+
+
+
+% ---------------------------------------------------
+\section{Spacing}
+
+\subsection{vspace}
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+\vspace{2cm}
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+\subsection{hspace}
+
+CCCCCCCCCCC\hspace{2cm}CCCCCCCCCCCCCCCCCC
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+
+
+% ---------------------------------------------------
+\section{Fill}
+
+LEFT\hfill MIDDLE\hfill RIGHT
+
+LEFT \hfill MIDDLE\hfill RIGHT
+
+LEFT\hfill MIDDLE \hfill RIGHT
+
+
+
+% ---------------------------------------------------
+\newpage
+\section{Lines}
+
+First line:
+
+\noindent\rule{8cm}{0.4pt}
+
+Second line:
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\blindtext
+
+Third centered line:
+
+\begin{center}
+    \noindent\rule{8cm}{0.4pt}
+\end{center}
+\vspace{-5mm}
+
+\blindtext
+
+Fourth line:
+
+% \line(x slope, y slope){length}
+\begin{center}\line(1,0){\textwidth}\end{center}
+
+Fifth line:
+
+\textcolor{red}{\noindent\rule{\textwidth}{0.4pt}}
+
+
+
+\end{document}
