@@ -36,7 +36,7 @@ echo "TEX_FILE_NAME_NOEXT: ${TEX_FILE_NAME_NOEXT}"
 echo "TMP_PDF_PATH: ${TMP_PDF_PATH}"
 echo "OUT_PDF_PATH: ${OUT_PDF_PATH}"
 echo
-echo "Press Enter to progress"
+echo "Press Enter to proceed"
 read -s -n 1 key
 
 

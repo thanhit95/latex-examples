@@ -48,7 +48,7 @@ pdf files to be removed:
 directory to be removed: /home/me/latex-tut/ztmp_latex
 directory to be removed: /home/me/latex-tut/svg-inkscape
 
-Press Enter to progress
+Press Enter to proceed
 ...
 Finish
 ```

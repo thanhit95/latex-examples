@@ -18,7 +18,7 @@ echo
 [[ -d "${TMP_DIR_PATH}" ]] && echo "directory to be removed: ${TMP_DIR_PATH}"
 [[ -d "${TMP_DIR_PATH2}" ]] && echo "directory to be removed: ${TMP_DIR_PATH2}"
 echo
-echo "Press Enter to progress"
+echo "Press Enter to proceed"
 read -s -n 1 key
 
 
