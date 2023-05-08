@@ -1,8 +1,8 @@
-# LATEX SIMPLE TUTORIALS WITH EXAMPLES
+# SIMPLE LATEX EXAMPLES
 
 ## Brief
 
-This repository provides simple tutorials (mostly examples) for learning LaTeX. Additionally, I support some scripts to make it easier to work on a local machine.
+This repository provides simple examples for learning LaTeX. Additionally, I support some scripts to make it easier to work on a local machine.
 
 The tutorials are presented in a logical and streamlined manner to help you maximize your learning.
 
@@ -32,7 +32,7 @@ The output PDF file:
 cleanup.sh
 ```
 
-The cleanup script shall automatically identify the files that will be removed and shall show you a list of those files before proceeding.
+The cleanup script will automatically identify the files that will be removed and then show you a list of those files before proceeding.
 
 Output example:
 
