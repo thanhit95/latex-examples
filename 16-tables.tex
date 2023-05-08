@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+
+\newcommand{\hr}[1][0.4pt] {\begin{center} \noindent\vspace{5mm} \textcolor{lightgray}{ \rule{\textwidth}{#1} } \vspace{5mm} \end{center}}
+
+
+\newenvironment{my-table-env}[2]
+    {
+    % horizontal padding
+    \setlength{\tabcolsep}{ #1 }
+    % vertical padding
+    \renewcommand{\arraystretch}{ #2 }
+    }
+    {
+    }
+% my-table-env
+
+
+\begin{document}
+\begin{center}
+
+    \begin{tabular}{c c c}
+        pen & learn & light \\
+        bottle & cute cat & mathematics \\
+        go next or go home & zero & nice
+    \end{tabular}
+
+    \hr
+
+    \begin{tabular}{|c|c c|}
+        pen & learn & light \\
+        bottle & cute cat & mathematics \\
+        go next or go home & zero & nice
+    \end{tabular}
+
+    \hr
+
+    \begin{tabular}{||c|c|c||}
+        \hline
+        pen & learn & light \\
+        \hline
+        bottle & cute cat & mathematics \\
+        \hline
+        go next or go home & zero & nice \\
+        \hline
+    \end{tabular}
+
+    \hr
+
+    \begin{my-table-env}{1em}{1.5} % horizontal padding=1em, vertical padding=1.5
+        \begin{tabular}{|c|c|c|}
+            \hline
+            pen & learn & light \\
+            \hline
+            bottle & cute cat & mathematics \\
+            \hline
+            go next or go home & zero & nice \\
+            \hline
+        \end{tabular}
+    \end{my-table-env}
+
+    \hr
+
+    \begin{my-table-env}{1.5em}{1.2} % horizontal padding=1.5em, vertical padding=1.1
+        \begin{tabular}{|c|c|}
+            \hline
+            \rule{0pt}{5ex} % top padding
+            {\Large\textbf{Name}} & {\Large\textbf{Age}}
+            \\[2ex] % bottom padding
+            \hline
+            Thanh & 28 \\
+            \hline
+            Ti \& Teo & 12 \\
+            \hline
+        \end{tabular}
+    \end{my-table-env}
+
+\end{center}
+\end{document}
