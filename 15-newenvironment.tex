@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{color}
+
+
+% The environment defines header and footer decoration for its contents.
+
+
+\newenvironment{example}
+    {
+    BEGIN ENVIRONMENT
+
+    }
+    {
+
+    END ENVIRONMENT
+    }
+% example
+
+
+\newenvironment{super-emphasis}
+    {
+    \bfseries
+    \color{red}
+    \begin{LARGE}
+    }
+    {
+    \end{LARGE}
+    }
+% super-emphasis
+
+
+
+\begin{document}
+
+
+\begin{example}
+    The content of ``example'' environment
+\end{example}
+
+
+\vspace{5mm}
+
+
+\begin{super-emphasis}
+    The content of ``super-emphasis''
+    \begin{itemize}
+        \item Laptop
+        \item Phone
+        \item Tablet
+    \end{itemize}
+\end{super-emphasis}
+
+
+\vspace{5mm}
+
+
+\end{document}
