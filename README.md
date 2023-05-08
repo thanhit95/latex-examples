@@ -39,14 +39,14 @@ Output example:
 ```text
 $ ./cleanup.sh
 
-TEX_DIR_PATH: /home/me/latex-tut
+TEX_DIR_PATH: /home/me/latex-examples
 
 pdf files to be removed:
-/home/me/latex-tut/01-basis.pdf
-/home/me/latex-tut/02-sections.pdf
+/home/me/latex-examples/01-basis.pdf
+/home/me/latex-examples/02-sections.pdf
 
-directory to be removed: /home/me/latex-tut/ztmp_latex
-directory to be removed: /home/me/latex-tut/svg-inkscape
+directory to be removed: /home/me/latex-examples/ztmp_latex
+directory to be removed: /home/me/latex-examples/svg-inkscape
 
 Press Enter to proceed
 ...
