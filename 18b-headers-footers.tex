@@ -1,0 +1,58 @@
+\documentclass{book}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{emptypage} % Solve the issuse: fancyhdr inserts headers/footers into blank pages
+\usepackage{blindtext}
+
+
+
+\geometry{a4paper, tmargin=20mm, bmargin=20mm, bindingoffset=35mm, includehead, nomarginpar}
+
+
+
+% Set the page style to "fancy"
+\pagestyle{fancy}
+
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+
+% O or E: Odd or Even pages
+% H or F: Header or Footer
+% L, C, R: Left, Centre or Right zone of the header/footer
+% \thepage: Current page
+% \leftmark: Chapter's name
+% \rightmark: Section's name
+\fancyhead[OC]{ \leftmark------\rightmark }
+\fancyhead[EC]{ Author's name }
+\setlength{\headheight}{52pt}
+
+
+
+\begin{document}
+
+
+
+\chapter{Introduction}
+\section{Who am I}
+\Blindtext[6]
+\section{What I do}
+\Blindtext[6]
+
+
+
+\chapter{Functions}
+\section{Definition}
+\Blindtext[5]
+\section{Syntaxes}
+\Blindtext[2]
+\section{Some Examples in Real Life with Explanations}
+\Blindtext[17]
+
+
+
+\chapter{Conclusion}
+\Blindtext[6]
+
+
+
+\end{document}

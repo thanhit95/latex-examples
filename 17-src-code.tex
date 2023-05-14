@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{Ivory},
+    commentstyle=\color{DarkGreen},
+    keywordstyle=\color{Navy},
+    numberstyle=\tiny\color{Gray},
+    stringstyle=\color{DimGray},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Set mystyle for whole document
+% \lstset{style=mystyle}
+
+
+
+\begin{document}
+
+
+
+The simplest way to insert the source code is to use verbatim:
+
+\begin{verbatim}
+for i in range(5):
+    for j in range(2):
+        # Print a string
+        print(f'i={i}, j={j}')
+\end{verbatim}
+
+
+
+\vspace{10mm} For loop example in Python:
+
+\begin{lstlisting}[language=Python]
+for i in range(5):
+    for j in range(2):
+        # Print a string
+        print(f'i={i}, j={j}')
+\end{lstlisting}
+
+
+
+\vspace{10mm} Other example:
+
+\begin{lstlisting}[language=python, style=mystyle]
+for i in range(5):
+    for j in range(2):
+        # Print a string
+        print(f'i={i}, j={j}')
+\end{lstlisting}
+
+
+\vspace{10mm} Include source code from a file outside:
+
+\lstinputlisting[language=c++, style=mystyle]{17-src-code-example.cpp}
+
+
+
+\end{document}

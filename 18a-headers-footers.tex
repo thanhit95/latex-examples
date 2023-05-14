@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+
+
+
+\geometry{a4paper, tmargin=20mm, bmargin=20mm, lmargin=20mm, rmargin=20mm}
+
+
+
+% Set the page style to "fancy"
+\pagestyle{fancy}
+
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+
+% O or E: Odd or Even pages
+% H or F: Header or Footer
+% L, C, R: Left, Centre or Right zone of the header/footer
+% \thepage: Current page
+% \leftmark: Section's name
+% \rightmark: Sub section's name
+\fancyhead[L]{ AAA AAA }
+\fancyhead[C]{ \leftmark------\rightmark }
+\fancyhead[R]{ BBB BBB }
+\fancyfoot[L,R]{ CCC CCC }
+\fancyfoot[C]{ Page: \thepage }
+
+
+
+\begin{document}
+
+
+
+\section{Introduction}
+\subsection{Who am I}
+\Blindtext[6]
+\subsection{What I do}
+\Blindtext[6]
+
+
+
+\section{Functions}
+\subsection{Definition}
+\Blindtext[5]
+\subsection{Syntaxes}
+\Blindtext[2]
+\subsection{Examples}
+\Blindtext[17]
+
+
+
+\section{Conclusion}
+\Blindtext[3]
+
+
+
+\end{document}
