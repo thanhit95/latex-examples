@@ -16,7 +16,6 @@ function detect_build_tool() {
         fi
     done
     echo ""
-    return
 }
 
 
