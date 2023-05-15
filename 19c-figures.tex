@@ -1,0 +1,39 @@
+% wrapfigure
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage[export]{adjustbox}
+
+
+
+\begin{document}
+
+
+
+\section{Floating position}
+
+\blindtext
+
+Now let's see a cool picture:
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \includegraphics[max width=0.25\textwidth]{img/universe.jpg}
+    % \includegraphics[width=0.25\textwidth]{img/universe.jpg}
+\end{wrapfigure}
+
+Do you think the picture above is great?
+
+\Blindtext[2]
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+\blindtext
+
+\section{Final part}
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+
+
+\end{document}

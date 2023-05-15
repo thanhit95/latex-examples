@@ -1,38 +1,30 @@
+% Subfigures help you to deal with complex content inside figures
 \documentclass[12pt]{article}
 \usepackage{graphicx}
-\usepackage{wrapfig}
+\usepackage{subcaption}
 \usepackage{blindtext}
-\usepackage[export]{adjustbox}
-
 
 
 \begin{document}
 
 
-
-\section{Floating position}
-
 \blindtext
 
-Now let's see a cool picture:
 
-\begin{wrapfigure}{r}{0.25\textwidth}
-    \includegraphics[max width=0.25\textwidth]{img/universe.jpg}
-    % \includegraphics[width=0.25\textwidth]{img/universe.jpg}
-\end{wrapfigure}
+\begin{figure}[ht]
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/universe.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/ganajp-purple-flower.jpg}
+    \end{subfigure}
+\end{figure}
 
-Do you think the picture above is great?
-
-\Blindtext[2]
-
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 \blindtext
-
-\section{Final part}
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
 
 
 \end{document}
