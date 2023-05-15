@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+
+
+\begin{document}
+
+
+\section{Introduction}
+
+\blindtext
+
+
+\begin{table}[h]
+\centering
+    \begin{tabular}{c | c | c}
+        Ord. & Name & Age \\
+        \hline
+        1 & John Smith & 20 \\
+        2 & Talor Brown & 19
+    \end{tabular}
+\caption{Student list}
+\label{tab:student_list}
+\end{table}
+
+\blindtext
+
+\begin{table}[h]
+    \centering
+        \begin{tabular}{c | c | c}
+            Ord. & Name & Age \\
+            \hline
+            1 & Peter Oliver & 42 \\
+            2 & Thomas Rogger & 30
+        \end{tabular}
+    \caption{Teacher list}
+    \label{tab:teacher_list}
+    \end{table}
+
+\blindtext
+
+\section{Summary}
+
+Reference to "Teacher list": \ref{tab:teacher_list}
+
+\end{document}
