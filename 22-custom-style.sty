@@ -1,0 +1,21 @@
+% \ProvidesPackage{22-custom-style}
+
+
+\usepackage{blindtext}
+
+
+\newenvironment{my-table-env}[2]
+    % HEADER
+    {
+    % horizontal padding
+    \setlength{\tabcolsep}{ #1 }
+    % vertical padding
+    \renewcommand{\arraystretch}{ #2 }
+    \begin{center}
+    }
+    % FOOTER
+    {
+    \end{center}
+    }
+% my-table-env
+

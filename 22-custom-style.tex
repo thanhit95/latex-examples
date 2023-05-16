@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{22-custom-style}
+
+
+\begin{document}
+
+
+\blindtext
+
+\begin{my-table-env}{1.5em}{1.2} % horizontal padding=1.5em, vertical padding=1.2
+    \begin{tabular}{|c|c|}
+        \hline
+        \rule{0pt}{5ex} % top padding
+        {\Large\textbf{Name}} & {\Large\textbf{Age}}
+        \\[2ex] % bottom padding
+        \hline
+        Thanh & 28 \\
+        \hline
+        Ti \& Teo & 12 \\
+        \hline
+    \end{tabular}
+\end{my-table-env}
+
+\blindtext
+
+
+\end{document}
