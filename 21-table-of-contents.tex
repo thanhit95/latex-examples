@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx}
+\usepackage{listings}
 \usepackage[list=true,listformat=simple]{subcaption}
 \usepackage{blindtext}
 
@@ -12,6 +13,7 @@
 \tableofcontents
 \listoftables
 \listoffigures
+\lstlistoflistings
 
 
 
@@ -58,9 +60,28 @@
 
 
 \subsection{Brief}
+
+
+
 \blindtext
 
+
+% captionpos=b ==> Insert the caption below the source code section
+\begin{lstlisting}[language=Python, caption={Nested for loop in Python}, captionpos=b]
+for i in range(5):
+    for j in range(2):
+        # Print a string
+        print(f'i={i}, j={j}')
+\end{lstlisting}
+
+
+Maecenas pharetra convallis posuere morbi leo urna.
+Laoreet non curabitur gravida arcu ac tortor dignissim.
+
+
 \subsection{Steps}
+
+
 
 Faucibus nisl tincidunt eget nullam non.
 Arcu ac tortor dignissim convallis aenean et.
@@ -74,10 +95,20 @@ Arcu ac tortor dignissim convallis aenean et.
 \end{figure}
 
 
+\Blindtext[2]
+
+
+\lstinputlisting[language=c++, caption={Point structure in C++}]{17-src-code-example.cpp}
+
+
 Maecenas pharetra convallis posuere morbi leo urna.
 Laoreet non curabitur gravida arcu ac tortor dignissim.
 
-\subsection{Summary}
+
+
+\subsection{Final result}
+
+
 
 \blindtext
 
@@ -95,8 +126,7 @@ Laoreet non curabitur gravida arcu ac tortor dignissim.
 \end{table}
 
 
-Id leo in vitae turpis massa sed elementum.
-\Blindtext[2]
+\blindtext
 
 
 
