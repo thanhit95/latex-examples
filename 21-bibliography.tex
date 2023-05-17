@@ -1,0 +1,25 @@
+% From https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX#The_bibliography_file
+% https://en.wikipedia.org/wiki/CTAN
+\documentclass[12pt]{article}
+\usepackage{url}
+\usepackage{blindtext}
+
+
+\begin{document}
+
+
+Using \texttt{bibtex} you can display a bibliography divided
+into sections, depending on citation type. Let's cite! Einstein's
+journal paper \cite{einstein} and Dirac's book \cite{dirac} are
+physics-related items.
+
+
+\textit{The Comprehensive Tex Archive Network} (CTAN)
+\cite{ctan} is the authoritative place where TeX related material and software can be found for download.
+
+
+\bibliographystyle{unsrt}
+\bibliography{21-bibliography.bib}
+
+
+\end{document}
