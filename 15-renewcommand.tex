@@ -1,0 +1,45 @@
+\documentclass[12pt]{book}
+\usepackage{blindtext}
+
+
+
+\renewcommand{\partname}{Level}
+\renewcommand{\chaptername}{Lecture}
+\renewcommand{\times}{ \hspace{2pt}\textbf{x}\hspace{2pt} }
+
+\renewcommand{\sqrt}[2][]{
+    \oldsqrt[\text{\scriptsize{#1}}]{#2}
+} % sqrt
+
+
+
+\begin{document}
+
+
+
+% ------------------------------
+\part{The fundamentals of ABC}
+\chapter{Introduction}
+
+\section{What is ABC}
+\blindtext
+\[ a \times b = 100 \]
+
+\section{What is DEF}
+\blindtext
+
+\chapter{The purposes}
+\blindtext
+
+
+
+% ------------------------------
+\part{Methods}
+\chapter{Method One}
+\blindtext
+\chapter{Method Two}
+\blindtext
+
+
+
+\end{document}
