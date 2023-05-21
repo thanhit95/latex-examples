@@ -1,10 +1,14 @@
 \documentclass[12pt]{book}
+\usepackage{emptypage}
 \usepackage{blindtext}
 
 
 
 \renewcommand{\partname}{Level}
 \renewcommand{\chaptername}{Lecture}
+\renewcommand{\thesection}{Section}
+\renewcommand{\thesubsection}{Sub}
+
 \renewcommand{\times}{ \hspace{2pt}\textbf{x}\hspace{2pt} }
 
 \renewcommand{\sqrt}[2][]{
@@ -19,14 +23,19 @@
 
 % ------------------------------
 \part{The fundamentals of ABC}
+
 \chapter{Introduction}
 
 \section{What is ABC}
 \blindtext
-\[ a \times b = 100 \]
+\subsection{Brief}
+Lorem ipsum
+\subsection{Example}
+\blindtext
 
 \section{What is DEF}
 \blindtext
+\[ a \times b = 100 \]
 
 \chapter{The purposes}
 \blindtext
@@ -35,9 +44,14 @@
 
 % ------------------------------
 \part{Methods}
+
 \chapter{Method One}
-\blindtext
+\Blindtext[2]
+
 \chapter{Method Two}
+\section{Brief}
+\blindtext
+\section{Example}
 \blindtext
 
 
